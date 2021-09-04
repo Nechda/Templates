@@ -37,7 +37,13 @@ namespace tools {
         using types_collection = decltype(make_tuple_by_structure<T>());
 
         std::cout << "Fields number" << " : " << n_fileds << std::endl;
-        std::cout << typeid(T).name() << " {" << std::endl;
+        std::cout << 
+        #ifdef TEST
+            ""
+        #else
+            typeid(T).name()
+        #endif
+        << "{" << std::endl;
         std::array<size_t, n_fileds> offsets = get_offsets<T>();
         print_imp_collection<0, n_fileds>::template print<T, types_collection, n_fileds>((const char*)&value, types_collection{}, offsets);
         std::cout << "}" << std::endl;

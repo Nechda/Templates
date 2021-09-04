@@ -1,0 +1,39 @@
+Fields number : 2
+{
+      signed int : 15
+           char* : hello
+}
+
+Fields number : 2
+{
+           float : -0.3
+          double : 3.14
+}
+Fields number : 3
+{
+      signed int : 10
+   unsigned long : 3
+            char : +
+}
+
+Fields number : 4
+{
+            char : 0
+            char : 1
+            char : 2
+            char : 3
+}
+
+Fields number : 2
+{
+   unsigned long : 1000
+           char* : Universal print testing
+}
+
+Fields number : 3
+{
+           char* : tets_print_strucures
+           char* : main.cpp
+    unsigned int : 28
+}
+
